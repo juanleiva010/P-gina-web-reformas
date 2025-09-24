@@ -3,51 +3,98 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
   background-color: #0077cc;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
-  text-align: center;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 nav a {
   color: #fff;
-  margin: 0 1rem;
+  margin-left: 1rem;
   text-decoration: none;
+  font-weight: 500;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+nav a:hover {
+  text-decoration: underline;
 }
 
 .hero {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  background-color: #e0f3ff;
 }
 
-.services {
+.hero img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.services-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
 .service-item {
-  background-color: #e0e0e0;
+  background-color: #fff;
   padding: 1rem;
-  border-radius: 5px;
-  width: 30%;
+  border-radius: 8px;
   text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-item img {
+  margin-bottom: 1rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.about-container img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .contact-form form {
@@ -61,7 +108,6 @@ main {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;
 }
 
 button {
@@ -75,6 +121,11 @@ button {
 
 button:hover {
   background-color: #005fa3;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 footer {
